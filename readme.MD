@@ -1,7 +1,3 @@
-README.MD Template
-
-#https://help.github.com/articles/basic-writing-and-formatting-syntax/
-
 # Trusty Ansible Container Platform Volume
 
 Master Repository
