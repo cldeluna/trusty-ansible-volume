@@ -4,6 +4,11 @@ README.MD Template
 
 # Trusty Ansible Container Platform Volume
 
+Master Repository
+claud@DESKTOP-S41OCM2 MINGW64 ~/docker/ansible (master)
+$ pwd
+/c/Users/claud/docker/ansible
+
 ##Synopsis
 
 
