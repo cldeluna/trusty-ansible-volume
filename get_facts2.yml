@@ -1,0 +1,38 @@
+---
+
+- hosts: cisco
+  connection: local
+  gather_facts: False
+
+  vars:
+    cli:
+        host: "{{ host }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        transport: cli
+
+  tasks:
+    - name: Get Cisco Facts
+      ios_facts:
+        gather_subset: all
+        provider: "{{ cli }}"
+
+      register: output
+
+    - debug: msg="Cisco Facts = {{ item.prop }} [ {{ item.value }} ]"
+      with_items:
+        - { prop: 'model', value: "{{ ansible_net_model }}" }
+        - { prop: 'hostname', value: "{{ ansible_net_hostname }}" }
+        - { prop: 'serial number', value: "{{ ansible_net_serialnum }}" }
+        - { prop: 'interfaces', value: "{{ ansible_net_interfaces }}" }
+        - { prop: 'version', value: "{{ ansible_net_version }}" }
+        - { prop: 'image', value: "{{ ansible_net_image }}" }
+        - { prop: 'file systems', value: "{{ ansible_net_filesystems }}" }
+
+
+    - local_action: >
+        copy content="{{ ansible_net_config }} \n  
+        Serial Number {{ ansible_net_serialnum }} \n   
+        Version {{ ansible_net_version }} \n 
+        Interfaces \n {{ ansible_net_interfaces}}" 
+        dest="./{{ inventory_hostname }}.log"

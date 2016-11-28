@@ -1,0 +1,500 @@
+  269  cd vagrant/
+  270  ls
+  271  cd ios-xe
+  272  ls
+  273  git status
+  274  git add Vagrantfile
+  275  git status
+  276  git commit -m "Refining Vagrantfile with bridged interface so it does not prompt"
+  277  git push
+  278  vi Vagrantfile
+  279  ls
+  280  exit
+  281  ls
+  282  cd D:
+  283  ls
+  284  cd Dropbox\ \(Indigo\ Wire\ Networks\)/
+  285  ls
+  286  cd scripts/
+  287  ls
+  288  cd vagrant/
+  289  ls
+  290  cd ios-xe
+  291  ls
+  292  git status
+  293  vi Vagrantfile
+  294  git add Vagrantfile
+  295  git commit -m "Updates to 3-rtr Vagrantfile"
+  296  git push
+  297  cd ..
+  298  ls
+  299  cd ..
+  300  ls
+  301  cd python/
+  302  ls
+  303  cd 2016
+  304  ls
+  305  cd PyNetA/
+  306  ls
+  307  git status
+  308  cd week2
+  309  ls
+  310  git status
+  311  cd ..
+  312  ls
+  313  mkdir week5
+  314  ls
+  315  git status
+  316  ls
+  317  vagrant box list
+  318  pwd
+  319  cd ..
+  320  ls
+  321  cd ..
+  322  ls
+  323  cd ..
+  324  ls
+  325  cd vagrant/
+  326  ls
+  327  mkdir veos
+  328  ls
+  329  cd veos
+  330  ls
+  331  pwd
+  332  ls ~/Downloads/*.box
+  333  vagrant box add --name vEOS-lab-4.16.6M ~/Downloads/vEOS-lab-4.16.6M-virtualbox.box
+  334  vagrant box list
+  335  vagrant init vEOS-lab-4.16.6M
+  336  vi Vagrantfile 
+  337  vagrant up
+  338  vagrant plugin install vagrant-vbguest
+  339  vagrant reload
+  340  vagrant status
+  341  vagrant status
+  342  vagrant up
+  343  vagrant status
+  344  vagrant halt
+  345  vagrant destroy
+  346  vagrant up
+  347  vagrant
+  348  vagrant status
+  349  vagrant destroy
+  350  vi Vagrantfile 
+  351  vagrant up
+  352  vagrant up
+  353  vagrant status
+  354  vagrant up
+  355  vagrant status
+  356  vagrant halt
+  357  vagrant destroy
+  358  mv Vagrantfile Vagrantfile.cs01
+  359  ls
+  360  history
+  361  vagrant init vEOS-lab-4.16.6M
+  362  ls
+  363  vagrant up
+  364  vagrant ssh-config
+  365  vagrant status
+  366  vagrant ssh
+  367  vagrant halt
+  368  ls
+  369  mv Vagrantfile.txt Vagrantfile
+  370  ls
+  371  vagrant up
+  372  cd ~/keys
+  373  cd ~/
+  374  ls
+  375  ls -al
+  376  cd .ssh/
+  377  ls
+  378  pwd
+  379  cd ..
+  380  ls
+  381  ls -al
+  382  cd .vagrant.d/
+  383  ls
+  384  ls -al
+  385  ls
+  386  cd ~/
+  387  ls
+  388  cd d:
+  389  ls
+  390  cd ~/.ssh/
+  391  ls
+  392  cd id_rsa.pub
+  393  ls
+  394  ls -al
+  395  cd d:
+  396  cd Dropbox\ \(Indigo\ Wire\ Networks\)/
+  397  cd scripts/
+  398  ls
+  399  cd vagrant/
+  400  ls
+  401  cd Vveo
+  402  ls
+  403  cd veos/
+  404  ls
+  405  vagrant up
+  406  vagrant up
+  407  pwd
+  408  cd ~/.vagrant.d/
+  409  ls
+  410  pwd
+  411  cd d:
+  412  cd Dropbox\ \(Indigo\ Wire\ Networks\)/scripts/vagrant/veos/
+  413  ls
+  414  vagrant satus
+  415  vagrant status
+  416  vagrant up
+  417  vagrant up
+  418  vagrant status
+  419  vagrant destroy
+  420  vagrant up
+  421  vagrant
+  422  vagrant status
+  423  vagrant up
+  424  vagrant status
+  425  vagrant ssh
+  426  vagrant ssh -c FastCli
+  427  vagrant ssh -c FastCli -p 15 -c "configure"
+  428  vagrant ssh
+  429  vagrant halt
+  430  vagrant destroy
+  431  vagrant up
+  432  vagrant up
+  433  vagrant up
+  434  vagrant up
+  435  vagrant status
+  436  vagrant ssh
+  437  vagrant halt
+  438  vagrant destroy
+  439  ls
+  440  rm insecure_private_key 
+  441  ls
+  442  cp Vagrantfile Vagrantfile.cs01.2
+  443  cp Vagrantfile.default Vagrantfile
+  444  ls
+  445  vagrant up
+  446  vagrant halt
+  447  vagrant destroy
+  448  ls
+  449  vagrant up
+  450  vagrant status
+  451  vagrant ssh-config
+  452  vagrant ssh
+  453  vagrant destroy
+  454  ls
+  455  cp Vagrantfile.default Vagrantfile
+  456  ls
+  457  vagrant up
+  458  vagrant up
+  459  vagrant destroy
+  460  vagrant destroy
+  461  vagrant up
+  462  vagrant status
+  463  vagrant ssh
+  464  vagrant halt
+  465  vagrant distroy
+  466  ssh-keygen
+  467  pwd
+  468  ssh-keygen
+  469  ls
+  470  pwd
+  471  ls -al
+  472  /
+  473  vagrant status
+  474  vagrant up
+  475  vagrant ssh-config
+  476  vagrant ssh
+  477  vagrant ssh
+  478  vagrant halt
+  479  ls
+  480  vagrant up
+  481  vagrant status
+  482  vagrant ssh veos-csw01
+  483  vagrant reload
+  484  vagrant reload
+  485  vagrant status
+  486  vagrant halt
+  487  vagrant up
+  488  vagrant status
+  489  vagrant ssh-config
+  490  ls
+  491  rm insecure_private_key 
+  492  ls
+  493  vagrant reload
+  494  vagrant status
+  495  vagrant reload
+  496  vagrant status
+  497  vagrant up
+  498  vagrant ssh-config
+  499  vagrant ssh
+  500  exit
+  501  docker imag3e
+  502  docker images
+  503  pwd
+  504  d:
+  505  d:
+  506  cd d:
+  507  ls
+  508  mkdir docker
+  509  cd docker/
+  510  ls
+  511  docker pull cldeluna/trusty-ansible
+  512  docker images
+  513  docker run -itd cldeluna/trusty-ansible
+  514  docker ps
+  515  docker attach fb
+  516  ls
+  517  pwd
+  518  docker attach fb
+  519  docker ps
+  520  docker ps -a
+  521  docker start fb
+  522  docker ps -a
+  523  docker ps
+  524  docker inspect fb
+  525  docker attach fb
+  526  docker ps
+  527  docker ps -a
+  528  pwd
+  529  mkdir tmp
+  530  docker cp fb:/ansible/* ./tmp/*
+  531  docker run -i -v /tmp:/ansible
+  532  docker start fb
+  533  docker attach fb
+  534  pwd
+  535  echo $(PWD)
+  536  docker ps -a
+  537  docker start fb
+  538  docker inspect -f {{.Mounts}} fb
+  539  docker ps
+  540  docker inspect fb
+  541  docker ps
+  542  docker commit -a="claudia@indigowire.net" fb cldeluna/trusty-ansible:latest
+  543  docker ps
+  544  docker images
+  545  docker stop 'docker ps -q'
+  546  docker stop 'docker ps -aq'
+  547  docker ps -q
+  548  docker ps -aq
+  549  docker rm 'docker ps -aq'
+  550  docker rm $(docker ps -aq)
+  551  docker stop $(docker ps -aq)
+  552  docker rm $(docker ps -aq)
+  553  docker ps
+  554  docker ps -a
+  555  docker images
+  556  docker rmi 59
+  557  mkdir host_ansible
+  558  ls
+  559  pwd
+  560  docker run -d cdeluna/trusty-ansible:latest -v $(PWD)/host_ansible:/ansible
+  561  docker run -d cldeluna/trusty-ansible:latest -v $(PWD)/host_ansible:/ansible
+  562  docker run -d -v $(PWD)/host_ansible:/ansible cldeluna/trusty-ansible:latest
+  563  docker ps
+  564  docker ps -a
+  565  docker info
+  566  docker version
+  567  docker inspect
+  568  docker --help
+  569  docker network
+  570  docker network inspect
+  571  docker ps
+  572  docker ps -a
+  573  docker run -d -v $(PWD)/host_ansible:/ansible cldeluna/trusty-ansible:latest
+  574  docker run -itd -v $(PWD)/host_ansible:/ansible cldeluna/trusty-ansible:latest
+  575  docker ps
+  576  ls
+  577  cd host_ansible/
+  578  ls
+  579  ls
+  580  cd ..
+  581  ls
+  582  cd tmp
+  583  ls
+  584  rm tmp
+  585  ls
+  586  rm -r tmp
+  587  ls
+  588  ls
+  589  cd ..
+  590  ls
+  591  rm -r tmp
+  592  ls
+  593  docker inspect 64
+  594  ls
+  595  cd host_ansible/
+  596  ls
+  597  pwd
+  598  docker ps -a
+  599  docker stop $(docker ps -aq)
+  600  docker rm $(docker ps -aq)
+  601  docker ps
+  602  docker ps -a
+  603  docker run -itd -v $(PWD):/ansible cldeluna/trusty-ansible:latest
+  604  docker ps
+  605  ls
+  606  s
+  607  touch temp.txt
+  608  ls
+  609  pwd
+  610  cd ..
+  611  ls
+  612  cd ..
+  613  ls
+  614  cd Dropbox\ \(Indigo\ Wire\ Networks\)/
+  615  ls
+  616  cd scripts/
+  617  ls
+  618  cd docker
+  619  ls
+  620  cd trusty-ansible/
+  621  ls
+  622  cd tmp
+  623  ls
+  624  ls
+  625  cd ..
+  626  ls
+  627  git status
+  628  cd tmp
+  629  ls
+  630  git status
+  631  vi Dockerfile 
+  632  history
+  633  history | grep build
+  634  docker build -t cldeluna/trusty-ansible:latest .
+  635  docker pull ubuntu:14.04
+  636  docker build -t cldeluna/trusty-ansible:latest .
+  637  docker images
+  638  docker login
+  639  docker login
+  640  docker login
+  641  docker ps
+  642  docker images
+  643  docker tag d7054bc936d4 cldeluna/trusty-ansible:latest
+  644  docker push cldeluna/trusty-ansible:latest
+  645  docker images
+  646  docker rm -v 4d
+  647  docker ps -a
+  648  docker rm -v d11
+  649  docker ps -a
+  650  docker images
+  651  docker images -a
+  652  docker images -g
+  653  docker images -ag
+  654  docker images
+  655  docker rmi -f d7
+  656  docker rmi -f 27
+  657  docker rmi -f 59
+  658  docker rmi -f 4d
+  659  docker images
+  660  docker pull cldeluna/trusty-ansible
+  661  docker images
+  662  docker run --rm -itd -v $(PWD):/home busybox
+  663  docker run -itd -v $(PWD):/home busybox
+  664  cd d:
+  665  ls
+  666  cd docker
+  667  ls
+  668  docker images
+  669  ls
+  670  mkdir tmp
+  671  ls
+  672  cd tmp
+  673  docker run -itd -v $(PWD):/home busybox
+  674  docker ps
+  675  docker attach d4
+  676  ls
+  677  ls
+  678  docker rm -v d4
+  679  dockerps
+  680  docker ps
+  681  docker ps -a
+  682  ls
+  683  cd ..
+  684  ls
+  685  cd tmp
+  686  ls
+  687  docker run -itd -v /d/docker/tmp/:/home busybox
+  688  docker attach d4
+  689  docker ps
+  690  docker attach 40
+  691  ls
+  692  cd ..
+  693  ls
+  694  ls
+  695  docker ps -a
+  696  docker rm -v 40
+  697  docker ps -a
+  698  docker images
+  699  cd tmp
+  700  ls -al
+  701  cd ..
+  702  ls -al
+  703  cd host_ansible/
+  704  ls -al
+  705  docker run -itd -v /d/docker/tmp/:/home busybox
+  706  docker attach 6c
+  707  ls
+  708  cd ..
+  709  ls
+  710  cd tmp
+  711  ls
+  712  ls -al
+  713  docker rm -v 6c
+  714  docker ps -a
+  715  ls
+  716  docker run -itd -v //d/docker/tmp/:/home busybox
+  717  docker attach 19
+  718  docker rm -v 19
+  719  ls
+  720  ls -al
+  721  cd c:
+  722  ls
+  723  cd Users
+  724  ls
+  725  cd claud
+  726  ls
+  727  pwd
+  728  mkdir docker
+  729  ls
+  730  cd docker
+  731  ls
+  732  pwd
+  733  docker run -itd -v /c/Users/claud/docker:/home busybox
+  734  docker attach f3
+  735  docker rm -v f3
+  736  docker ps
+  737  docper ps -a
+  738  ls
+  739  docker ps -a
+  740  ls
+  741  ls
+  742  ls
+  743  mkdir ansible
+  744  ls
+  745  pwd
+  746  cd ansible/
+  747  ls
+  748  pwd
+  749  touch this_file_on_host.txt
+  750  ls
+  751  ls
+  752  docker run --rm -itd -v  /c/Users/claud/docker/ansible:/ansible cldeluna/trusty-ansible
+  753  docker run -itd -v  /c/Users/claud/docker/ansible:/ansible cldeluna/trusty-ansible
+  754  docker ps
+  755  ls
+  756  ls
+  757  vi ansible.cfg
+  758  vi hosts
+  759  ls
+  760  ansible -i hosts --list
+  761  ls
+  762  vi get_facts2.yml
+  763  ls
+  764  cat hosts
+  765  history
+  766  pwd
+  767  ls
+  768  history > docker_cmd_history.txt
