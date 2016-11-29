@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Generate qos switch configuration files
+    template: src=./voice-qos-template.j2
+                dest=./QOS_CFGS/{{item.hostname}}.cfg
+    with_items:
+      - { hostname: arctic-rtr01, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+      - { hostname: csr1, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+      - { hostname: csr2, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+      - { hostname: csr3, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+      - { hostname: csr4, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+      - { hostname: csr5, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+      - { hostname: csr6, int_list: ["GigabitEtherent3", "GigabitEthernet4"] }
+       

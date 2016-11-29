@@ -1,0 +1,32 @@
+
+
+class-map match-any CONTROL
+ match dscp cs3 
+ match dscp cs6 
+class-map match-any VOICE
+ match dscp ef 
+class-map match-any SCAVENGER
+ match dscp cs1 
+
+
+policy-map QOS-VOICE-PRIORITY
+ class VOICE
+  priority percent 5
+ class CONTROL
+  bandwidth percent 4 
+ class SCAVENGER
+  bandwidth percent 1 
+  random-detect dscp-based
+ class class-default
+  bandwidth percent 90 
+  random-detect dscp-based
+
+
+{% for int in {{ item.int_list }} %}
+
+interface range {{ int }} 
+ service-policy output QOS-VOICE-PRIORITY
+
+{% endfor %} 
+
+

@@ -1,0 +1,29 @@
+---
+## Using IOS Template  Module to compare a config
+
+
+- hosts: cisco
+  connection: local
+  gather_facts: False
+
+  vars:
+    cli:
+        host: "{{ host }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        transport: cli
+
+  tasks:
+    - name: provide the base configuration for comparison
+      ios_template:
+        provider: "{{ cli }}"
+#        authorize: true
+#        backup: true
+        src: voice-qos.txt
+        #config: current_config.txt
+
+      register: output
+
+    - debug: var=output
+
+    - local_action: copy content="{{ output }}" dest="./{{ inventory_hostname }}.qos"
