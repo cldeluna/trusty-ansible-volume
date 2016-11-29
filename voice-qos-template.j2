@@ -1,5 +1,8 @@
 
 
+interface loopback46
+ ip address {{ item.testloop }} 255.255.255.255
+
 class-map match-any CONTROL
  match dscp cs3 
  match dscp cs6 
@@ -24,7 +27,7 @@ policy-map QOS-VOICE-PRIORITY
 
 {% for int in item.int_list %}
 
-interface range "{{ int }}" 
+interface {{ int }} 
  service-policy output QOS-VOICE-PRIORITY
 
 {% endfor %} 
