@@ -22,9 +22,9 @@ policy-map QOS-VOICE-PRIORITY
   random-detect dscp-based
 
 
-{% for int in {{ item.int_list }} %}
+{% for int in item.int_list %}
 
-interface range {{ int }} 
+interface range "{{ int }}" 
  service-policy output QOS-VOICE-PRIORITY
 
 {% endfor %} 
